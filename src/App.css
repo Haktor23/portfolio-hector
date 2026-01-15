@@ -1,0 +1,484 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/bg9.jpeg);
+
+  color: #333;
+  font-family: monospace;
+
+
+}
+
+/* Estilos del portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  height: 100vh;
+  gap: 20px;
+}
+
+.wrapper {
+  margin: 3em;
+}
+
+.info-personal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+  width: 100%;
+}
+
+.descripcion {
+  width: 60%;
+}
+
+.profesion-personal {
+  font-size: 1.5em;
+}
+
+.nom {
+  width: 19.5ch;
+  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 4em;
+}
+
+.menu-opciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+  padding: 10px;
+}
+
+
+.skills-section,
+.projects-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.skills-logos img,
+.learning-logos img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.project {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+/* Animaciones */
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* Estilos de imagenes */
+
+.img-lenguajes {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.img-lenguajes * {
+  display: inline-block;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.angular {
+  background-image: url(./assets/logoAngular1.png);
+}
+
+.javascript {
+  background-image: url(./assets/JSLogo1.png);
+}
+
+.java {
+  background-image: url(./assets/logoJava1.png);
+}
+
+.spring {
+  background-image: url(./assets/springLogo1.png);
+}
+
+.html {
+  background-image: url(./assets/HTML5Logo1.png);
+}
+
+.css {
+  background-image: url(./assets/CSSLogo1.png);
+}
+
+.react {
+  background-image: url(./assets/logoReact1.png);
+  margin-right: 5px;
+}
+
+.python {
+  background-image: url(./assets/PythonLogo1.png);
+  margin-left: 5px;
+}
+
+.mysql {
+  background-image: url(./assets/mysqlLogo.png);
+}
+
+.oracledb {
+  background-image: url(./assets/Oracle_Database-Logo.png);
+}
+
+.firebase {
+  background-image: url(./assets/logoFirebase.png);
+}
+
+.supabase {
+  background-image: url(./assets/supabase-logo.png);
+}
+
+.dbeaver {
+  background-image: url(./assets/DBeaver-Logo.png);
+}
+
+.docker {
+  background-image: url(./assets/Docker-Logo.png);
+}
+
+.githubb {
+  background-image: url(./assets/GitHubLogo.png);
+}
+
+.git {
+  background-image: url(./assets/Git_logo.png);
+}
+
+.virtualbox {
+  background-image: url(./assets/Virtualbox_logo.png);
+
+}
+
+.photoshop {
+  background-image: url(./assets/AdobePS_Logo.png);
+}
+
+
+/* Apartado contactos*/
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2em;
+  color: #333;
+
+}
+
+.email {
+  font-size: 1.5em;
+  margin: 5px;
+  border: #333 3px solid;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Fondo oscuro con opacidad */
+}
+
+.email-tag {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.copiar {
+  background-image: url(./assets/cpsticker.png);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linkedin {
+
+  background-image: url(./assets/linkedinLogo.png);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.github {
+  background-image: url(./assets/GitHubLogo.png);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rrss-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2em;
+  color: #333;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+
+
+/* Botones de bajo*/
+.portfolio-experiment {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.portfolio-experiment a {
+  color: #333;
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+
+.portfolio-experiment a .text {
+  font-family: proxima-nova, monospace;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #333;
+  transition:
+    transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.portfolio-experiment .line {
+  position: absolute;
+  background: #333;
+}
+
+.portfolio-experiment .line.-right,
+.portfolio-experiment .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+
+.portfolio-experiment .line.-top,
+.portfolio-experiment .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+
+.portfolio-experiment .line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+
+.portfolio-experiment .line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.portfolio-experiment .line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.portfolio-experiment .line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+.portfolio-experiment a:hover .text,
+.portfolio-experiment a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:hover:after,
+.portfolio-experiment a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition:
+    transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+    right 0.2s cubic-bezier(1, 0, 0.65, 1.01),
+    left 0s 0.3s;
+}
+
+.portfolio-experiment a:hover .line,
+.portfolio-experiment a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio-experiment a:hover .line.-right,
+.portfolio-experiment a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.portfolio-experiment a:hover .line.-top,
+.portfolio-experiment a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.portfolio-experiment a:hover .line.-left,
+.portfolio-experiment a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.portfolio-experiment a:hover .line.-bottom,
+.portfolio-experiment a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}
+
+/* Estilo para proyectos*/
+
+.info-proyecto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: #333;
+  width: 100%;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.textoedit {
+  font-size: 1.5em;
+}
+
+.p-proyecto {
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+
+}
+
+.img-proyecto {
+  background-image: url(./assets/collagefinal.jpg);
+  width: 1000px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .descripcion {
+    width: 80%;
+  }
+
+  .img-proyecto {
+    width: 90%;
+    height: 370px;
+
+  }
+
+  .textoedit {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .descripcion {
+    width: 80%;
+  }
+
+  .nom {
+    font-size: 2.3em;
+  }
+
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn {
+
+    width: 100%;
+    max-width: 300px;
+    margin: 5px;
+  }
+
+
+  .text {
+    text-align: center;
+  }
+
+
+}

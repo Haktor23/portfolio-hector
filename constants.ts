@@ -74,8 +74,8 @@ export const TRANSLATIONS = {
     about: {
       title: "About Me",
       subtitle: "My Journey",
-      bio_p1: "I am a Full Stack Developer passionate about the intersection of robust software design and artificial intelligence. My goal is to create digital experiences that not only work perfectly but also feel intuitive and modern.",
-      bio_p2: "With experience in both the Java ecosystem (Spring Boot) and the modern JavaScript stack (React, Next.js) plus Python for AI, I have the ability to take a product from database conception to the final pixel-perfect interface.",
+      bio_p1: "I am a Web Application Development Technician with specialization in Artificial Intelligence and Big Data. Passionate about programming and the ability of AI to transform how we live and work.",
+      bio_p2: "I develop Full Stack solutions with frontend frameworks like Vue, Angular and React, combining robust backend with Node.js and Spring Boot through REST API architectures. Additionally, I work on AI projects applying Machine Learning, intelligent agents and generative artificial intelligence. My goal is to create complete digital experiences, from the database to modern and intuitive interfaces.",
       stats: {
         exp: "Years Exp.",
         projects: "Projects",
@@ -89,7 +89,7 @@ export const TRANSLATIONS = {
     contact: {
       title: "Let's build something",
       title_accent: "amazing",
-      text: "Have an innovative idea or need a developer who understands both design and code? I'm just a message away.",
+      text: "If you believe I can add value to your project or team, I'll be happy to talk. Always open to new opportunities and collaborations.",
       cta: "Start Conversation",
       copyright: "Designed with"
     },

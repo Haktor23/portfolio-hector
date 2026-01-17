@@ -13,9 +13,13 @@ const Navbar: React.FC = () => {
 
   const scrollToSection = (sectionId: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (sectionId === 'bento') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   };
 
@@ -24,8 +28,8 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className={`glass-card rounded-full px-6 py-3 flex items-center gap-6 transition-all ${isScrolled ? 'bg-black/80' : 'bg-transparent border-transparent'}`}>
           <a href="#bento" onClick={scrollToSection('bento')} className="hover:text-accent transition-colors text-sm font-medium">{t.nav.home}</a>
-          <a href="#work" onClick={scrollToSection('work')} className="hover:text-accent transition-colors text-sm font-medium">{t.nav.work}</a>
           <a href="#about" onClick={scrollToSection('about')} className="hover:text-accent transition-colors text-sm font-medium">{t.nav.about}</a>
+          <a href="#work" onClick={scrollToSection('work')} className="hover:text-accent transition-colors text-sm font-medium">{t.nav.work}</a>
           <a href="#contact" onClick={scrollToSection('contact')} className="hover:text-accent transition-colors text-sm font-medium">{t.nav.contact}</a>
 
           {/* Language Toggle */}
